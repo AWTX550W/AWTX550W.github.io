@@ -29,6 +29,14 @@
   .card:hover { border-color: #38bdf8; transform: translateY(-2px); }
   .card-left { flex: 1; min-width: 0; }
   .card-left h3 { font-size: 1.2rem; color: #f1f5f9; margin-bottom: 8px; }
+  .card-left h3 a { color: #f1f5f9; text-decoration: none; }
+  .card-left h3 a:hover { color: #38bdf8; }
+  .card-left .gh-link { display: inline-block; margin-top: 10px; font-size: 0.82rem; color: #38bdf8; text-decoration: none; border: 1px solid #1e3a5f; padding: 4px 12px; border-radius: 4px; transition: background 0.2s; }
+  .card-left .gh-link:hover { background: #1e3a5f; }
+  .mini-card a { color: #38bdf8; text-decoration: none; display: inline-block; width: 100%; height: 100%; }
+  .mini-card a:hover { color: #7dd3fc; }
+  .mini-card { transition: border-color 0.2s; }
+  .mini-card:hover { border-color: #38bdf8; }
   .card-left .desc { color: #94a3b8; font-size: 0.92rem; line-height: 1.7; margin-bottom: 14px; }
   .card-left .tech-tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .card-left .tech-tags span {
@@ -75,11 +83,12 @@
   <!-- 项目1: agri-ackermann-planner -->
   <div class="card">
     <div class="card-left">
-      <h3>农机自动驾驶弓字形路径规划器</h3>
+      <h3><a href="https://github.com/AWTX550W/agri-ackermann-planner" target="_blank">农机自动驾驶弓字形路径规划器</a></h3>
       <p class="desc">基于阿克曼转向模型的覆盖路径规划算法。输入田块边界，自动生成弓字形作业路径，支持障碍物避障检测、地头转弯优化、覆盖率评估（路径索引格网法，提速300倍），输出CSV路径点用于实际农机导航。</p>
       <div class="tech-tags">
         <span>Python</span><span>路径规划</span><span>Ackermann模型</span><span>覆盖算法</span><span>避障检测</span><span>NumPy</span><span>Matplotlib</span>
       </div>
+      <a class="gh-link" href="https://github.com/AWTX550W/agri-ackermann-planner" target="_blank">→ GitHub</a>
     </div>
     <div class="card-right">
       <div class="gif-placeholder">
@@ -92,11 +101,12 @@
   <!-- 项目2: crop-maturity-edge -->
   <div class="card">
     <div class="card-left">
-      <h3>作物成熟度检测 + Jetson边缘部署</h3>
+      <h3><a href="https://github.com/AWTX550W/agri-maturity-edge" target="_blank">作物成熟度检测 + Jetson边缘部署</a></h3>
       <p class="desc">YOLOv8目标检测 + ResNet成熟度分类 → ONNX量化 → TensorRT加速 → Jetson Nano边缘端部署。GPS联动记录检测坐标，全链路从模型训练到嵌入式推理，端到端可运行的农业AI感知方案。</p>
       <div class="tech-tags">
         <span>Python</span><span>YOLOv8</span><span>ResNet</span><span>ONNX</span><span>TensorRT</span><span>Jetson Nano</span><span>GPS</span><span>PyTorch</span>
       </div>
+      <a class="gh-link" href="https://github.com/AWTX550W/agri-maturity-edge" target="_blank">→ GitHub</a>
     </div>
     <div class="card-right">
       <div class="gif-placeholder">
@@ -109,11 +119,12 @@
   <!-- 项目3: robot-arm-ik -->
   <div class="card">
     <div class="card-left">
-      <h3>六轴机械臂逆运动学求解器</h3>
+      <h3><a href="https://github.com/AWTX550W/robot-arm-ik" target="_blank">六轴机械臂逆运动学求解器</a></h3>
       <p class="desc">DH参数建模 → 正运动学 → DLS阻尼最小二乘+解析法IK双求解器 → 五次多项式轨迹规划 → AABB碰撞检测 → 笛卡尔路径跟随 → 3D可视化 → Streamlit Web交互界面。支持末端执行器沿任意空间路径运动。</p>
       <div class="tech-tags">
         <span>Python</span><span>DH建模</span><span>逆运动学</span><span>雅可比矩阵</span><span>轨迹规划</span><span>碰撞检测</span><span>Streamlit</span><span>3D可视化</span>
       </div>
+      <a class="gh-link" href="https://github.com/AWTX550W/robot-arm-ik" target="_blank">→ GitHub</a>
     </div>
     <div class="card-right">
       <div class="gif-placeholder">
@@ -126,11 +137,12 @@
   <!-- 项目4: drone-spray-planner -->
   <div class="card">
     <div class="card-left">
-      <h3>无人机喷洒航线规划模拟器</h3>
+      <h3><a href="https://github.com/AWTX550W/drone-spray-planner" target="_blank">无人机喷洒航线规划模拟器</a></h3>
       <p class="desc">纯前端交互式模拟器：在地图上绘制农田多边形 → 设定无人机参数（飞行高度/喷幅宽度/药量） → 自动生成最优喷洒航线 → 3D动画演示飞行过程。Leaflet地图 + Three.js 3D可视化，零后端部署。</p>
       <div class="tech-tags">
         <span>JavaScript</span><span>Leaflet</span><span>Three.js</span><span>路径规划</span><span>3D动画</span><span>前端全栈</span><span>HTML5 Canvas</span>
       </div>
+      <a class="gh-link" href="https://github.com/AWTX550W/drone-spray-planner" target="_blank">→ GitHub</a>
     </div>
     <div class="card-right">
       <div class="gif-placeholder">
@@ -143,22 +155,30 @@
   <h2 class="section-title" style="margin-top:48px;">其他项目</h2>
 
   <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:14px;">
-    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
+    <a href="https://github.com/AWTX550W/agri-ackermann-planner" target="_blank" style="text-decoration:none;color:inherit;">
+    <div class="mini-card" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
       <span style="color:#38bdf8;font-size:0.8rem;font-weight:600;">覆盖率评估优化</span>
       <p style="color:#94a3b8;font-size:0.82rem;margin-top:4px;">路径索引格网法，O(n×m) → O(n×k)，提速300倍</p>
     </div>
-    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
+    </a>
+    <a href="https://github.com/AWTX550W/agriculture-robot-planner" target="_blank" style="text-decoration:none;color:inherit;">
+    <div class="mini-card" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
       <span style="color:#38bdf8;font-size:0.8rem;font-weight:600;">RTK-GPS数据分析</span>
       <p style="color:#94a3b8;font-size:0.82rem;margin-top:4px;">农机轨迹解析 + 热力图可视化 + Web报告生成</p>
     </div>
-    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
+    </a>
+    <a href="https://github.com/AWTX550W/industrial-fault-diagnosis" target="_blank" style="text-decoration:none;color:inherit;">
+    <div class="mini-card" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
       <span style="color:#38bdf8;font-size:0.8rem;font-weight:600;">工业机械故障诊断助手</span>
       <p style="color:#94a3b8;font-size:0.82rem;margin-top:4px;">规则引擎 + RAG知识库，轴承/电机故障智能诊断</p>
     </div>
-    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
+    </a>
+    <a href="https://github.com/AWTX550W/ai-desk-pet" target="_blank" style="text-decoration:none;color:inherit;">
+    <div class="mini-card" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;">
       <span style="color:#38bdf8;font-size:0.8rem;font-weight:600;">AI程序员桌宠</span>
       <p style="color:#94a3b8;font-size:0.82rem;margin-top:4px;">tkinter + Pillow，GitHub状态联动像素机器人</p>
     </div>
+    </a>
   </div>
 
 </div>
